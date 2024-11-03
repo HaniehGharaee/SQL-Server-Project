@@ -1,5 +1,6 @@
-SELECT * FROM customerTable
+SELECT * FROM customer
 /* */
 SELECT CustomerName,City
-FROM customerTable
+FROM customer
 /* */
+SELECT DISTINCT Country From customer /*Remove duplicates*/
