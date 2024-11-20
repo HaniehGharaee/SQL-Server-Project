@@ -33,4 +33,9 @@ ORDER BY Country, CustomerName;
 /*************************************************/
 SELECT * FROM customer
 ORDER BY Country ASC, CustomerName DESC;
-
+/*************************************************/
+SELECT * FROM customer
+WHERE Country = 'Germany'
+AND City = 'Berlin'
+AND PostalCode > 12000;
+/*************************************************/
