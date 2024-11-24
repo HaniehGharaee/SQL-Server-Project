@@ -39,3 +39,10 @@ WHERE Country = 'Germany'
 AND City = 'Berlin'
 AND PostalCode > 12000;
 /*************************************************/
+SELECT *
+FROM customer
+WHERE Country = 'Germany' OR Country = 'Spain';
+/*************************************************/
+SELECT * FROM customer
+WHERE NOT Country = 'spain' AND NOT Country = 'Germany'
+/*************************************************/
