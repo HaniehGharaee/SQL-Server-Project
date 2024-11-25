@@ -46,3 +46,6 @@ WHERE Country = 'Germany' OR Country = 'Spain';
 SELECT * FROM customer
 WHERE NOT Country = 'spain' AND NOT Country = 'Germany'
 /*************************************************/
+INSERT INTO customer (CustomerID,CustomerName, Address, City, PostalCode, Country)
+VALUES ('17','Cardinal', 'Skagen 21', 'Stavanger', '4006', 'Norway') 
+/***********************************************************************AFTER RUN OR SAME EXECUTE THESE VALUES PUT ON THE TABLE CUSTOMER/
