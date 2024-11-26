@@ -48,4 +48,10 @@ WHERE NOT Country = 'spain' AND NOT Country = 'Germany'
 /*************************************************/
 INSERT INTO customer (CustomerID,CustomerName, Address, City, PostalCode, Country)
 VALUES ('17','Cardinal', 'Skagen 21', 'Stavanger', '4006', 'Norway') 
-/***********************************************************************AFTER RUN OR SAME EXECUTE THESE VALUES PUT ON THE TABLE CUSTOMER/
+/***********************************************************************AFTER RUN OR SAME EXECUTE THESE VALUES PUT ON THE TABLE CUSTOMER*/
+INSERT INTO customer (CustomerID, CustomerName,City,Country)
+VALUES ('18','Cardinal', 'Stavanger', 'Norway');
+/************************************************************************/
+UPDATE customer
+SET City = 'Frankfurt'
+WHERE CustomerID = 1;
