@@ -55,3 +55,14 @@ VALUES ('18','Cardinal', 'Stavanger', 'Norway');
 UPDATE customer
 SET City = 'Frankfurt'
 WHERE CustomerID = 1;
+/************************************************************************/
+DELETE FROM customer WHERE CustomerName ='Alfreds Futterkiste'
+/************************************************************************/
+/*Select top */
+
+/**************************************Aggregate Functions**********************************/
+SELECT MIN(Price)
+FROM Products;
+SELECT MAX(Price)
+FROM Products
+/**************************************Aggregate Functions**********************************/
