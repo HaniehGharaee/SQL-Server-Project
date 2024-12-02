@@ -65,4 +65,18 @@ SELECT MIN(Price)
 FROM Products;
 SELECT MAX(Price)
 FROM Products
-/**************************************Aggregate Functions**********************************/
+/**************************************Aggregate Functions***********************************/
+SELECT MIN(Price) As SmallestPrice
+From Products
+/**************************************COUNT()**********************************************/
+SELECT COUNT(*) AS NumberProduct
+FROM Products
+SELECT COUNT(ProductName)
+FROM  Products
+/**************************************COUNT()**********************************************/
+/******SELECT COUNT(ProductID)
+FROM Products
+WHERE Price > 5*****/
+SELECT COUNT (DISTINCT Price)/*Remove duplicates*/
+FROM Products
+/**************************************COUNT()**********************************************/
