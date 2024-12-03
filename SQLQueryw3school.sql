@@ -80,3 +80,16 @@ WHERE Price > 5*****/
 SELECT COUNT (DISTINCT Price)/*Remove duplicates*/
 FROM Products
 /**************************************COUNT()**********************************************/
+SELECT COUNT(*) AS [Number of record]
+FROM Products
+/**************************************SUM()**********************************************/
+SELECT SUM(Quantity) AS total
+FROM OrderDetails
+/**************************************SUM()**********************************************/
+SELECT SUM(Quantity) AS [Sum of Quantity]
+FROM OrderDetails
+WHERE ProductID = 11
+/**************************************SUM()**********************************************/
+SELECT SUM(Quantity * 10) As totalNumber
+FROM OrderDetails;
+
