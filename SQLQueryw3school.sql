@@ -85,11 +85,23 @@ FROM Products
 /**************************************SUM()**********************************************/
 SELECT SUM(Quantity) AS total
 FROM OrderDetails
-/**************************************SUM()**********************************************/
+
 SELECT SUM(Quantity) AS [Sum of Quantity]
 FROM OrderDetails
 WHERE ProductID = 11
-/**************************************SUM()**********************************************/
+
 SELECT SUM(Quantity * 10) As totalNumber
 FROM OrderDetails;
+/**************************************ALTER For Error**********************************************/
+ALTER TABLE Products
+ALTER COLUMN Price FLOAT
+/**************************************AVG()**********************************************/
+SELECT AVG(Price) AS [AVG Price]
+FROM Products
 
+SELECT AVG(Price)
+FROM Products
+WHERE CategoryID = 1
+
+SELECT * FROM Products
+WHERE Price > (SELECT AVG(Price) FROM Products)
