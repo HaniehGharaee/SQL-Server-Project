@@ -95,7 +95,7 @@ FROM OrderDetails;
 /**************************************ALTER For Error**********************************************/
 ALTER TABLE Products
 ALTER COLUMN Price FLOAT
-/**************************************AVG()**********************************************/
+/**************************************AVG()*********************************************************/
 SELECT AVG(Price) AS [AVG Price]
 FROM Products
 
@@ -105,3 +105,17 @@ WHERE CategoryID = 1
 
 SELECT * FROM Products
 WHERE Price > (SELECT AVG(Price) FROM Products)
+/*******************************************LIKE************************************************************/
+SELECT * FROM  customer
+WHERE CustomerName LIKE 'a%'
+
+SELECT * FROM customer
+WHERE City LIKE 'L_nd__';
+
+SELECT * FROM customer
+WHERE City LIKE '%L%'
+
+SELECT * FROM customer
+WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%'
+
+
