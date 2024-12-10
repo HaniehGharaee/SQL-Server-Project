@@ -117,5 +117,13 @@ WHERE City LIKE '%L%'
 
 SELECT * FROM customer
 WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%'
+/*******************************************BETWEEN AND IN************************************************************/
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
 
+SELECT * FROM Products
+WHERE Price NOT BETWEEN 10 AND 20
 
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND CategoryID IN (1,2,3)
